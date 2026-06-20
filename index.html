@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
+  <meta name="theme-color" content="#F5C800" />
+  <meta name="apple-mobile-web-app-capable" content="yes" />
+  <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
+  <meta name="apple-mobile-web-app-title" content="Silverback 180" />
+
+  <title>Silverback 180</title>
+
+  <link rel="manifest" href="manifest.json" />
+  <link rel="apple-touch-icon" href="icons/icon-192.png" />
+  <link rel="stylesheet" href="app.css" />
+</head>
+<body>
+
+<div id="app-shell">
+
+  <!-- Header -->
+  <header id="app-header">
+    <div id="app-logo-placeholder">SB</div>
+    <div id="app-title">SILVERBACK <span>180</span></div>
+  </header>
+
+  <!-- Mode Navigation -->
+  <nav id="mode-nav" aria-label="Spielmodi">
+    <!-- Buttons werden per JS befüllt -->
+  </nav>
+
+  <!-- Active mode renders here -->
+  <main id="mode-container" role="main">
+    <div class="mode-loading">Lade…</div>
+  </main>
+
+</div>
+
+<!-- Toast notification -->
+<div id="toast" role="status" aria-live="polite"></div>
+
+<script src="app.js" defer></script>
+</body>
+</html>
